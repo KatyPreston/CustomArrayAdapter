@@ -31,6 +31,8 @@ public class TopAlbumsAdapter extends ArrayAdapter<Album> {
         TextView artist = listItemView.findViewById(R.id.artist);
         artist.setText(currentAlbum.getArtist().toString());
 
+        listItemView.setTag(currentAlbum);
+
         return listItemView;
     }
 }

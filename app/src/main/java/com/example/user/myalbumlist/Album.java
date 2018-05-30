@@ -1,6 +1,10 @@
 package com.example.user.myalbumlist;
 
-public class Album {
+import android.media.Image;
+
+import java.io.Serializable;
+
+public class Album implements Serializable{
     private Integer ranking;
     private String title;
     private String artist;
@@ -23,4 +27,5 @@ public class Album {
     public String getArtist(){
         return this.artist;
     }
+
 }
